@@ -9,8 +9,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
 		@include('seller.layouts.common.css')
+		@include('layouts.css')
 	</head>
-	<body>
+	<body >
 		<section class="body">
 			@include('seller.layouts.common.header')
 			<div class="inner-wrapper" style="padding-top: 90px !important;">
@@ -23,5 +24,6 @@
 		</section>
 		@include('seller.layouts.common.footer')
 		@include('seller.layouts.common.js')
+		@include('layouts.js')
 	</body>
 </html>

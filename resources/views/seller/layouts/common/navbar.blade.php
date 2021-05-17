@@ -1,4 +1,4 @@
-<div class="topnavcustommbl">
+<div class="topnavcustommbl" style="padding-bottom: 0px; !important">
     <ul class="topnavul">
         <li><a href="{{ url('seller/dashboard') }}">Dashboard</a></li>
         <li><a href="#">Buyers Request</a></li>

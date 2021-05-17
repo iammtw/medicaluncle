@@ -6,14 +6,7 @@
         <a href="{{ url('seller/catalogs/add') }}" class="btn btn-success">Add</button> </a>
             <h1 class="newsletter-bigbaseline">You have uploaded 48 Catalogs</h1>
     </div>
-    <form action="newsletter_results" method="get" class="search nav-form">
-        <div class="input-group newsletter-searchbar">
-            <input type="text" class="form-control" name="user_query" placeholder="Brand, Model, Keywords">
-            <span class="input-group-btn">
-                <button class="btn btn-default" value="Search" name="search" type="submit"><i class="fa fa-search"></i></button>
-            </span>
-        </div>
-    </form>
+    
 </div>
 
    

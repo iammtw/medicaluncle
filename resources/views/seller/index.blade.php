@@ -104,145 +104,21 @@
 
 
 
-<div class="row">
+<div class="row" style="padding-top:40px">
 	<div class="recentlyaddedproindex">
 		<h2>Recently Added Products</h2>
-
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
+		
+		<div class="col-md-4 col-lg-3 col-sm-6">
+			<div class="card" style="width: 18rem;height: 375px;border:2px solid rgba(0,0,0,.125) !important">
+					<img class="card-img-top product-listimg" style="height: 220px;max-width: 260px;" src="{{ url('assets/images/p1.png') }}" />
+					<div class="card-body">
+						<h5 class="card-title" style="padding-top:30px; font-size:1.3em"> TENS - BESMED BE-660 TAIWAN </h5>
+						<p class="card-text" >₨.4,000.00 </p>
+					</div>
 			</div>
 		</div>
 
 		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		<div class="col-sm-3" style="margin-top: 25px; !important">
-			<div class="singlerecentlypro">
-				<img src="{{ url('assets/images/p1.png') }}" alt="">
-				<div class="singlerecentlydescription">
-					<p>TENS - BESMED BE-660 TAIWAN</p>
-					<p>₨.4,000.00</p>
-				</div>
-			</div>
-		</div>
-
-		
-		
-		
-
 
 	</div>
 </div>
