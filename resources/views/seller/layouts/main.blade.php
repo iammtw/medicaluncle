@@ -21,7 +21,7 @@
 					</section>
 			</div>
 		</section>
-		@include('seller.layouts.common.footer');
-		@include('seller.layouts.common.js');
+		@include('seller.layouts.common.footer')
+		@include('seller.layouts.common.js')
 	</body>
 </html>

@@ -35,8 +35,8 @@
 					<div class="card-body">
 						<h5 class="card-title" style="min-height: 31px;"> Product name </h5>
 						<p class="card-text">description </p>
-						<a href="edit_product" class="btn btn-success"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-						<a href="delete_product" class="btn btn-danger"><i style="font-size:17px" class="fa">&#xf014;</i></i></a>
+						<a href="edit_product" class="btn btn-success btn-block"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Edit</a>
+						<a href="delete_product" class="btn btn-danger btn-block"><i style="font-size:17px" class="fa">&#xf014;</i></i>&nbsp; Delete</a>
 					</div>
 				</div>
 		</div>

@@ -1,5 +1,5 @@
 <footer>
     <div class="footer">
-        <p> &copy; CopyRights All rights reserved.</p>
+        <p> &copy; medicaluncle.com {{ date('Y') }}</p>
     </div>
 </footer>
