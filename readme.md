@@ -13,5 +13,3 @@ php artisan serve
 
 # or
 Directly Run localhost/medicaluncle
-
-``
