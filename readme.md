@@ -6,10 +6,11 @@
 
 ## Run 
 ```bash
-Install the Server application (Xaamp or Wamp) on your system.
+The is the Laravel Framework Application
+Install the Server application (Xampp or Wamp) on your system.
 
 # hit the command
 php artisan serve
 
 # or
-Directly Run localhost/medicaluncle
+Directly Run `localhost/medicaluncle`
