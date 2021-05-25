@@ -20,11 +20,11 @@
                 <div class="col-lg-12 col-md-12 col-sm-12">
                    @if (session('msg'))
                    <div class="alert alert-warning" role="alert">
-                    <strong> {{ session('msg') }} </strong> 
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true"><i class="zmdi zmdi-close"></i></span>
-                    </button>
-                </div>
+                        <strong> {{ session('msg') }} </strong> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="zmdi zmdi-close"></i></span>
+                        </button>
+                    </div>
                    @endif
                     <div class="card">
                         <div class="body" style="min-height: 1px">

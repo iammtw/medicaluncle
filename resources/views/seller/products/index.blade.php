@@ -1,25 +1,28 @@
 @extends('seller.layouts.main')
 @section('content')
 
-	<div class="col-md-12 col-xs-12 pl-0">
-		<a href="{{ url('seller/products/add') }}" class="btn btn-sm btn-primary text-center">Add More Products</a>
-		<a href="{{ url('seller/products/category') }}" class="btn btn-sm btn-primary text-center">Add More Category</a>
-
+	<div class="col-md-12 col-xs-12 pl-0" style="margin-right: 4px">
+		<a href="{{ url('seller/products/add') }}" class="btn btn-sm btn-primary text-center">Add Products</a>
+		<a href="{{ url('seller/products/category') }}" class="btn btn-sm btn-primary text-center">Add Category</a>
 	<div>
 	<div class="row" style="margin-top: 25px">
-		<div class="col-md-4 col-lg-3 col-sm-6">
-			<div class="card" style="width: 18rem;">
-				<img class="card-img-top product-listimg" src="{{ url('assets/images/p1.png') }}" />
-				<div class="card-body">
-					<h5 class="card-title" style="min-height: 31px;"> Product name </h5>
-					<p class="card-text">description </p>
-					<a href="edit_product" class="btn btn-success btn-block"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Edit</a>
-					<a href="delete_product" class="btn btn-danger btn-block"><i style="font-size:17px" class="fa">&#xf014;</i></i>&nbsp; Delete</a>
+
+		@foreach ($products as $product)
+			<div class="col-md-4 col-lg-3 col-sm-6">
+				<div class="card" style="width: 18rem;">
+					<img class="card-img-top product-listimg" src="{{ asset('storage/'.$product->image) }}" alt="{{ $product->name }}"  /> 
+					<div class="card-body">
+						<a href="{{ url('seller/products/'.$product->id) }}">
+							<h5 class="card-title" style="min-height: 60px;font-weight:bold"> {{ $product->name }} </h5>
+						</a>
+						<h6 class="card-text" style="font-style: italic; font-size:10px">{{ App\Category::find($product->category_id)->name }}</h6>
+						<p class="card-text">{{ substr($product->description, 0, 100) }} </p>
+						<a href="edit_product" class="btn btn-success btn-block"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Edit</a>
+						<a href="delete_product" class="btn btn-danger btn-block"><i style="font-size:17px" class="fa">&#xf014;</i></i>&nbsp; Delete</a>
+					</div>
 				</div>
 			</div>
-		</div>
-
-		
+		@endforeach
 	</div> 
 	
 	
