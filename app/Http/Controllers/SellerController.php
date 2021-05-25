@@ -14,4 +14,16 @@ class SellerController extends Controller
         $catalogs = Catalog::where('user_id',Auth::id())->orderBy('id','DESC')->limit('8')->get();
         return view('seller.index', compact('products','catalogs'));
     }
+
+    public function buyerRequests(){
+        return view('seller.buyer-requests');
+    }
+
+    public function pendingOrders(){
+        return view('seller.orders.pending');
+    }
+
+    public function history(){
+        return view('seller.history');
+    }
 }

@@ -16,8 +16,8 @@
 							<h5 class="card-title" style="min-height: 60px;font-weight:bold"> {{ $product->name }} </h5>
 						</a>
 						<h6 class="card-text" style="font-style: italic; font-size:10px;min-height: 30px;">{{ App\Category::find($product->category_id)->name }}</h6>
-						<p class="card-text" style="height: 75px;">{{ substr($product->description, 0, 100) }} </p>
-						<a href="edit_product" class="btn btn-success btn-block"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Edit</a>
+						<p class="card-text" style="height: 75px;">{{ substr($product->excerpt, 0, 100) }} </p>
+						<a href="{{ url('seller/products/update/'.$product->id) }}" class="btn btn-success btn-block"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp; Edit</a>
 						<a href="delete_product" class="btn btn-danger btn-block"><i style="font-size:17px" class="fa">&#xf014;</i></i>&nbsp; Delete</a>
 					</div>
 				</div>
