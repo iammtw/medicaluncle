@@ -3,7 +3,7 @@
 
 	<div class="col-md-12 col-xs-12 pl-0">
 		<a href="{{ url('seller/products/add') }}" class="btn btn-sm btn-primary text-center">Add More Products</a>
-		<a href="add-newcategory" class="btn btn-sm btn-primary text-center">Add More Category</a>
+		<a href="{{ url('seller/products/category') }}" class="btn btn-sm btn-primary text-center">Add More Category</a>
 
 	<div>
 	<div class="row" style="margin-top: 25px">

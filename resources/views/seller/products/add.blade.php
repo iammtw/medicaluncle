@@ -1,6 +1,6 @@
 @extends('seller.layouts.main')
 @section('content')
-<div class="row">
+{{-- <div class="row">
 	<div class="col-md-12">
 		<form id="form" action="add_products" method="post" class="form-horizontal" enctype="multipart/form-data">
 			<section class="panel">
@@ -72,5 +72,87 @@
 			</section>
 		</form>
 	</div>
-</div>
+</div> --}}
+
+<section class="content" style="margin: 25px; background: #ffffff;">
+    <div class="body_scroll">
+        <div class="block-header">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <h2>Add Product</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="zmdi zmdi-home"></i> {{ App\User::find(auth::id())->name }} </a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);">Add Product</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row clearfix" >
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    {{-- <div class="alert alert-warning" role="alert">
+                        <strong>Bootstrap</strong> Better check yourself, <a target="_blank" href="https://getbootstrap.com/docs/4.2/components/input-group/">View More</a>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true"><i class="zmdi zmdi-close"></i></span>
+                        </button>
+                    </div> --}}
+                    <div class="card">
+                        <div class="body" style="min-height: 1px">
+                            <div class="row clearfix">
+                                <div class="col-sm-12">
+
+									<form action="" method="post">
+										<div class="form-group">  
+											<label for="">Name</label>                                  
+											<input type="text" class="form-control" placeholder="Username" />
+										</div>
+	
+										<div class="form-group">  
+											<label for="">Category</label>                                  
+											<select name="category_id" class="form-control">
+												<option selected="true">Select Category</option>
+											</select>
+										</div>
+	
+										<div class="form-group">  
+											<label for="">Price</label>                                  
+											<input type="text" class="form-control" placeholder="Username" />
+										</div>
+	
+										<div class="form-group">  
+											<label for="">SKU</label>                                  
+											<input type="text" class="form-control" placeholder="Username" />
+										</div>
+	
+										<div class="form-group">  
+											<label for="">Image</label>                                  
+											<input type="file" class="form-control" placeholder="Username" />
+										</div>
+	
+										<div class="form-group">
+											<div class="form-line">
+												<label for=""> Description </label>
+												<textarea rows="4" class="form-control no-resize" placeholder="Please type what you want..."></textarea>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<button class="btn btn-block btn-lg btn-success">Submit</button>
+										</div>
+
+
+									</form>
+                                    
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	
 @endsection

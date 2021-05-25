@@ -1,10 +1,5 @@
-<script src="{{ url('assets/bundles/libscripts.bundle.js') }}"></script> 
-<script src="{{ url('assets/bundles/vendorscripts.bundle.js') }}"></script> 
-<script src="{{ url('assets/bundles/jvectormap.bundle.js') }}"></script> 
-<script src="{{ url('assets/bundles/sparkline.bundle.js') }}"></script> 
-<script src="{{ url('assets/bundles/c3.bundle.js') }}"></script>
+
 <script src="{{ url('assets/bundles/mainscripts.bundle.js') }}"></script>
 <script src="{{ url('assets/js/pages/index.js') }}"></script>
-<script src="{{ url('assets/plugins/momentjs/moment.js') }}"></script> 
 <script src="{{ url('assets/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js') }}"></script> 
 <script src="{{ url('assets/js/pages/forms/basic-form-elements.js') }}"></script>

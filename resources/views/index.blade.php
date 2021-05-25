@@ -37,9 +37,7 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item cta">
-              <a href="#" class="nav-link"
-                ><span>Buy Used Products</span></a
-              >
+              <a href="{{ url('login') }}" class="nav-link"><span>Login to Admin Panel</span></a>
             </li>
           </ul>
         </div>
