@@ -33,10 +33,11 @@
 
 									<form action="{{ url('seller/products/add') }}" method="post" enctype="multipart/form-data">
 										@csrf
+										
 										<div class="form-group">  
 											<label for="">Name</label>                                  
-											<input type="text" class="form-control" name="name" placeholder="Enter Product Name" />
-										</div>
+											<input type="text" class="form-control" name="name" required placeholder="Enter Product Name" />
+										</div> <br>
 	
 										<div class="form-group">  
 											<label for="">Category</label> <br>                                 
@@ -45,29 +46,28 @@
 												@foreach ($categories as $category)
 													<option value="{{ $category->id }}"> {{ $category->name }} </option>
 												@endforeach
-												
 											</select>
-										</div>
+										</div> <br>
 	
 										<div class="form-group">  
 											<label for="">Price</label>                                  
-											<input type="text" class="form-control" name="price" placeholder="Enter Product Price" />
-										</div>
+											<input type="text" class="form-control" required name="price" placeholder="Enter Product Price" />
+										</div> <br>
 	
 										<div class="form-group">  
 											<label for="">SKU</label>                                  
-											<input type="text" class="form-control" name="sku" placeholder="Enter Product SKU" />
-										</div>
+											<input type="text" class="form-control" required name="sku" placeholder="Enter Product SKU" />
+										</div> <br>
 	
 										<div class="form-group">  
 											<label for="">Image</label>                                  
-											<input type="file" class="form-control" name="image" />
-										</div>
+											<input type="file" class="form-control" required name="image" />
+										</div> <br>
 
 										<div class="form-group">
 											<div class="form-line">
 												<label for=""> Excerpt </label>
-												<textarea rows="2" class="form-control no-resize" id="excerpt" name="excerpt" placeholder="Please type short excerpt..."></textarea>
+												<textarea rows="2" class="form-control no-resize" required id="excerpt" name="excerpt" placeholder="Please type short excerpt..."></textarea>
 												<span style="float:right" id="charsLeft">100 chars left</span>
 											</div>
 										</div>
@@ -75,7 +75,7 @@
 										<div class="form-group">
 											<div class="form-line">
 												<label for=""> Description </label>
-												<textarea rows="4" class="form-control no-resize" name="description" placeholder="Please type what you want..."></textarea>
+												<textarea rows="4" class="form-control no-resize" required name="description" placeholder="Please type what you want..."></textarea>
 											</div>
 										</div>
 

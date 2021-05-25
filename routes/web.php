@@ -16,3 +16,5 @@ Route::post('seller/products/add','ProductController@insert')->middleware('auth'
 
 Route::get('seller/catalogs','CatalogController@catalogs')->middleware('auth');
 Route::get('seller/catalogs/add','CatalogController@add')->middleware('auth');
+Route::post('seller/catalogs/add','CatalogController@insert')->middleware('auth');
+Route::get('seller/catalogs/delete/{id}','CatalogController@delete')->middleware('auth');
