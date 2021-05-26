@@ -33,3 +33,21 @@ Route::get('seller/catalogs/delete/{id}','CatalogController@delete')->middleware
 Route::get('seller/buyer-requests','SellerController@buyerRequests')->middleware('auth');
 Route::get('seller/pending-orders','SellerController@pendingOrders')->middleware('auth');
 Route::get('seller/history','SellerController@history')->middleware('auth');
+
+// Admin ROutes
+
+Route::get('admin/profile', 'AdminController@profile')->middleware('auth');
+Route::post('admin/profile', 'AdminController@profileUpdate')->middleware('auth');
+Route::get('admin/change-password', 'AdminController@changePassword')->middleware('auth');
+Route::post('admin/change-password', 'AdminController@changePasswordUpdate')->middleware('auth');
+
+Route::get('admin/sellers', 'AdminController@sellers')->middleware('auth','admin');
+
+Route::get('admin/products', 'AdminController@products')->middleware('auth','admin');
+Route::get('admin/products/add', 'AdminController@addProduct')->middleware('auth','admin');
+
+Route::get('admin/catalogs', 'AdminController@catalogs')->middleware('auth','admin');
+Route::get('admin/catalogs/add', 'AdminController@addCatalog')->middleware('auth','admin');
+
+Route::get('admin/buyers', 'AdminController@buyers')->middleware('auth','admin');
+Route::get('admin/orders', 'AdminController@orders')->middleware('auth','admin');
