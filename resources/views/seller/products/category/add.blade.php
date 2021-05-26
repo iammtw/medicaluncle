@@ -67,7 +67,7 @@
                                            <tr>
                                                 <td> {{ $category->id }} </td>
                                                 <td> {{ $category->name }} </td>
-                                                <td> <a href=" {{ url('seller/products/category/delete/'.$category->id) }} " class="btn btn-danger">Delete</a> </td>
+                                                <td> <a href=" {{ url('seller/products/category/delete/'.$category->id) }} " onclick="return confirm('Are you sure you want to delete?');" class="btn btn-danger">Delete</a> </td>
                                            </tr>
                                             @endforeach
                                         </tbody>

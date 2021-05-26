@@ -17,7 +17,7 @@
 		<div id="userbox" class="userbox">
 			<a href="#" data-toggle="dropdown">
 				<figure class="profile-picture">
-						<img class="img-circle" src="{{ url('assets/images/logo.png') }}" /> 
+						<img class="img-circle" src="{{ url('assets/images/userimg.png') }}" /> 
 				</figure>
 
 				<div class="profile-info" >
@@ -31,7 +31,7 @@
 			<div class="dropdown-menu">
 				<ul class="list-unstyled">
 					<li class="divider"></li>
-					<li> <a role="menuitem" tabindex="-1" tabindex="-1" href="#"><i class="fa fa-user"></i> My Profile</a> </li>
+					<li> <a role="menuitem" tabindex="-1" tabindex="-1" href="{{ url('seller/profile') }}"><i class="fa fa-user"></i> My Profile</a> </li>
 					<li> 
 						<a role="menuitem" tabindex="-1" tabindex="-1" href="{{ route('logout') }}"
 							onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

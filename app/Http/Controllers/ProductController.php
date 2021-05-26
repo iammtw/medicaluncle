@@ -102,4 +102,9 @@ class ProductController extends Controller
         $product->save();
         return redirect()->back()->with('msg','Successfully Updated!');
     }
+
+    public function deleteProduct($id){
+        Product::find($id)->delete();
+        return redirect()->back();
+    }
 }

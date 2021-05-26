@@ -170,7 +170,6 @@
 							color: black;"> {{ $catalog->name }} </p>
 					</a>
 							<p style="font-size: 12px;padding: 20px;"> {{ $catalog->excerpt }} </p>
-							<a href="{{ url('seller/catalogs/delete/'.$catalog->id) }}" class="btn btn-danger btn-block"> Delete</a>
 						</div>
 				
 				</section>
