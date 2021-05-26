@@ -19,6 +19,12 @@ Route::get('seller/products/update/{id}','ProductController@updateProduct')->mid
 Route::post('seller/products/update/{id}','ProductController@updateInsertProduct')->middleware('auth');
 Route::get('seller/products/delete/{id}','ProductController@deleteProduct')->middleware('auth');
 
+Route::get('seller/products/used','ProductController@used')->middleware('auth');
+Route::get('seller/products/used/add','ProductController@addUsed')->middleware('auth');
+Route::post('seller/products/used/add','ProductController@insertUsed')->middleware('auth');
+
+Route::get('seller/products/inventory','ProductController@inventory')->middleware('auth');
+
 Route::get('seller/catalogs','CatalogController@catalogs')->middleware('auth');
 Route::get('seller/catalogs/add','CatalogController@add')->middleware('auth');
 Route::post('seller/catalogs/add','CatalogController@insert')->middleware('auth');

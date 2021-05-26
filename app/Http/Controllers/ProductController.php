@@ -107,4 +107,22 @@ class ProductController extends Controller
         Product::find($id)->delete();
         return redirect()->back();
     }
+
+    public function used(){
+        return view('seller.products.used');
+    }
+
+    public function addUsed(){
+        return view('seller.products.used-product');
+    }
+
+    public function insertUsed(){
+        return view('seller.products.used');
+    }
+
+    public function inventory(){
+        return view('seller.products.inventory');
+    }
+
+    
 }

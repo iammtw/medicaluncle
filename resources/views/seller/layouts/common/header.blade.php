@@ -4,8 +4,8 @@
 			<img src="{{ url('assets/images/logo.png') }}" height="35" alt="Medical Uncle" />
 		</a>
 		<div class="headersubmitlink">
-			<a href="#">Post Used Product</a>
-			<a href="#">Manage Inventory</a>
+			<a href="{{ url('seller/products/used') }}">Post Used Product</a>
+			<a href="{{ url('seller/products/inventory') }}">Manage Inventory</a>
 		</div>
 
 		<div class="visible-xs toggle-sidebar-left" data-toggle-class="sidebar-left-opened" data-target="html" data-fire-event="sidebar-left-opened">
