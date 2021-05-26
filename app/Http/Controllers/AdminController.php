@@ -69,7 +69,10 @@ class AdminController extends Controller
          return view('admin.catalogs.add',compact('categories'));
      }
 
-    
+    public function buyers(){
+        $buyers = User::where('role','buyer')->get();
+        return view('admin.buyers.index', compact('buyers'));
+    }
 
     public function orders(){
         return view('admin.orders.index');

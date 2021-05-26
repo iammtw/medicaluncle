@@ -9,7 +9,7 @@
         @endif
 
         <div class="card-header py-3">
-            <a href="{{ url('#') }}" class="btn btn-primary" style="float:right"> <i class="fa fa-add"></i>  Add Seller </a>
+            {{-- <a href="{{ url('#') }}" class="btn btn-primary" style="float:right"> <i class="fa fa-add"></i>  Add Seller </a> --}}
             <h6 class="m-0 font-weight-bold text-primary">All Sellers</h6>
         </div>
 
