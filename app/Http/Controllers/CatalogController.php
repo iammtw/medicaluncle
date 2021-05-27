@@ -20,20 +20,9 @@ class CatalogController extends Controller
     }
 
     public function insert(Request $req) {
-        $req->validate([
+        $this->validate($req, [
             'image' => 'required|mimes:jpg,jpeg,png|max:4096',
-            'image' => 'required|max:4096',
-            'image.*' => 'image|mimes:png,jpeg,jpg',
-            
-            'image' => 'max:4096',
-            'image.*' => 'image|mimes:png,jpeg,jpg',
-
             'pdf' => 'required|mimes:pdf|max:4096',
-            'pdf' => 'required|max:4096',
-            'pdf.*' => 'pdf|mimes:pdf',
-            
-            'pdf' => 'max:4096',
-            'pdf.*' => 'pdf|mimes:pdf',
         ]);
 
         $image = $req->file('image')->getClientOriginalName();

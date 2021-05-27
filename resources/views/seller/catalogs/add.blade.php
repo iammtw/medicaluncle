@@ -68,7 +68,10 @@
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label">PDF<span class="required">*</span></label>
                                             <div class="col-sm-9">
-                                                <input type="file" name="pdf" class="form-control"  required/>
+                                                <input type="file" name="pdf" accept="application/pdf" class="form-control"  required/>
+
+                                               
+
                                             </div>
                                         </div>
                     
@@ -82,6 +85,15 @@
 
 									</form>
                                 </div> 
+                                @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
